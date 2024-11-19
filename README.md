@@ -45,4 +45,3 @@ we want 2/w = 1/1000, we set w = 2000, and (1/2)^d = 0.001, i.e. d = log 0.001/ 
 
   CountMinSketch.get_count(count_min_sketch, "foo")
   > 5
-```elixir
