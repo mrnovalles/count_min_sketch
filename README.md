@@ -31,17 +31,18 @@ we want 2/w = 1/1000, we set w = 2000, and (1/2)^d = 0.001, i.e. d = log 0.001/ 
 ### Usage
 
 ```elixir
-count_min_sketch = CountMinSketch.new(100, 1000) # Creates a new CountMinSketch with 100 rows and 1000 columns
+  # Creates a new CountMinSketch with 100 rows and 1000 columns 
+  count_min_sketch = CountMinSketch.new(100, 1000)
 
-# Adds a new element to the sketch
-count_min_sketch = CountMinSketch.add(count_min_sketch, "foo")
->CountMinSketch.add("foo")
->CountMinSketch.add("foo")
->CountMinSketch.add("foo")
->CountMinSketch.add("foo")
->CountMinSketch.add("foo")
->CountMinSketch.add("bar")
+  # Adds a new element to the sketch
+  count_min_sketch = CountMinSketch.add(count_min_sketch, "foo")
+    >CountMinSketch.add("foo")
+    >CountMinSketch.add("foo")
+    >CountMinSketch.add("foo")
+    >CountMinSketch.add("foo")
+    >CountMinSketch.add("foo")
+    >CountMinSketch.add("bar")
 
-CountMinSketch.get_count(count_min_sketch, "foo") # Returns 6
-> 6
+  CountMinSketch.get_count(count_min_sketch, "foo")
+  > 5
 ```elixir
