@@ -19,7 +19,7 @@ end
 
 ## Error rate calculation
 
-CountMinSketch is simple to use, though an important factor to take into account is the calculation of the expected error rate with a certain probability. An excerpt from [2] states:
+CountMinSketch is simple to use, though an important factor to take into account is the calculation of the expected error with a certain probability. An excerpt from [2] states:
 
 > As a result, for a sketch of size w × d with total count N , it follows that any estimate has error at most 2N/w, with probability at least 1 − (1/2)^d. So setting the parameters w and d large enough allows us
 to achieve very high accuracy while using relatively little space.
