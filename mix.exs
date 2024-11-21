@@ -20,13 +20,13 @@ defmodule CountMinSketch.MixProject do
     ]
   end
 
- defp package do
+  defp package do
     [
       maintainers: ["Mariano Vallés"],
       description: "Minimal Count-Min Sketch implementation in Elixir",
       licenses: ["MIT"],
       links: %{
-        "GitHub" => @source_url,
+        "GitHub" => @source_url
       }
     ]
   end
