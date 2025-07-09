@@ -31,7 +31,7 @@ we want 2/w = 1/1000, we set w = 2000, and (1/2)^d = 0.001, i.e. d = (log 0.001/
 ### Usage
 
 ```elixir
-  # Creates a new CountMinSketch with 100 rows and 1000 columns 
+  # Creates a new CountMinSketch with d = 100 (rows) and w = 1000 (columns)
   count_min_sketch = CountMinSketch.new(100, 1000)
 
   # Adds a new element to the sketch
